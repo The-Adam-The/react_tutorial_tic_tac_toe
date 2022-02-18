@@ -9,14 +9,14 @@ function Square(props) {
         </button>
     );
 }  
-  class Board extends React.Component {
-      constructor(props) {
-          super(props);
-          this.state = {
-              squares: Array(9).fill(null),
-              xIsNext: true,
-          };
-      }
+class Board extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            squares: Array(9).fill(null),
+            xIsNext: true,
+        };
+    }
 
     handleClick(i) {
         const squares = this.state.squares.slice();
